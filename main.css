@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #535151;
+}
+
+a {
+    text-decoration: none;
+    color: #b9a05c
+}
+a:hover{
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+   
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+header img {
+    height: 100px;
+    width: 100px;
+   
+}
+
+header nav li {
+    margin-left: 1rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+#contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+#contact h2 {
+    font-size: 50px;
+}
+
+#contact img {
+    margin-top: 5rem;
+    height: 100px;
+}
+
+#quem-somos {
+    background-color: #fff;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+#quem-somos h2,
+#quem-somos h3 {
+    text-align: center;
+    color: #b9a05c;
+}
+
+#quem-somos h2 {
+    font-size: 50px;
+}
+
+#quem-somos p {
+    font-size: 25px;
+}
+
+#quem-somos img {
+    height: 300px;
+}
+
+#quem-somos h3 {
+    padding-top: 5rem;
+}
+
+#quem-somos .container .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    flex-direction: column;
+}
+
+#contato {
+    color: #fff;
+    margin-top: 2rem;
+}
+
+h5 {
+    color: #b9a05c;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.social i {
+    cursor: pointer;
+}
+
+#contato .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#contato .container .esquerda {
+    width: 45%;
+    margin-bottom: 2rem;
+}
+
+#contato .container .esquerda h5 {
+    margin-top: 1rem;
+}
+
+#contato .container .esquerda p {
+    margin-bottom: 1rem;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+form .nome {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+form input,
+form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+textarea{
+    resize: none;
+}
+
+form input {
+    width: 48%;
+}
+
+form button {
+    align-self: flex-start;
+    background-color: #b9a05c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    width: auto;
+}
+.mobile{
+    display: none;
+}
+
+/* Adaptação para tela pequena */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        margin-top: 1rem;
+    }
+    header nav li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    #contato .container {
+        flex-direction: column;
+    }
+
+    #contato .container .esquerda {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+   
+    form {
+        width: 100%;
+    }
+
+    form .nome {
+        flex-direction: column;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+
+    form button {
+        align-self: flex-start;
+        width: auto;
+    }
+    .quem-somos .container{
+        font-size: 8px;
+    }
+    #quem-somos p {
+        font-size: 16px
+    }
+  
+    #contact h2 {
+        font-size: 25px;
+    }
+    footer{
+        text-align: center;
+        color: #fff;
+    }
+    .social{
+        width: 12%;
+    }
+
+    header .container{
+        height: 50%;
+        align-items: center;
+        
+    }
+
+    #quem-somos .container h2{
+        font-size: 25px;
+       
+    }
+
+    .pc{
+        display: none;
+    }
+}
+footer{
+    text-align: center;
+    color: #fff;
+}
